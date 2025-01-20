@@ -8,7 +8,7 @@
             [Parameter(Mandatory=$true)]
             [string]$LogFilePath
         )
-        $date = get-date -format "ddmmyy hh:ss" 
+        $date = get-date -format "ddMMyy hh:ss" 
         $logMessage = "[$date] :: $Message"
         Add-Content -Path $logFilePath -Value $logMessage
     }
